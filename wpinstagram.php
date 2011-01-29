@@ -3,7 +3,7 @@
 	Plugin Name: Instagram for Wordpress
 	Plugin URI: https://gist.github.com/799086
 	Description: displays latest 20 instagrams
-	Version: 0.1
+	Version: 0.1.1
 	Author: Eriks Remess
 	Author URI: http://twitter.com/EriksRemess
 */
