@@ -15,15 +15,15 @@ function instagram_add_scripts(){
 	wp_enqueue_script("jquery_cycle");
 	wp_register_script("jquery_easing", "http://static.apps.lv/fancybox/jquery.easing-1.3.pack.js");
 	wp_enqueue_script("jquery_easing");
-	wp_register_script("jquery_mousewhell", "http://static.apps.lv/fancybox/jquery.mousewheel-3.0.2.pack.js");
+	wp_register_script("jquery_mousewhell", "http://static.apps.lv/fancybox/jquery.mousewheel-3.0.4.pack.js");
 	wp_enqueue_script("jquery_mousewhell");
-	wp_register_script("jquery_fancybox", "http://static.apps.lv/fancybox/jquery.fancybox-1.3.1.pack.js");
+	wp_register_script("jquery_fancybox", "http://static.apps.lv/fancybox/jquery.fancybox-1.3.4.pack.js");
 	wp_enqueue_script("jquery_fancybox");
 	add_action("wp_head", "instagram_add_scripts_extra");
 }
 
 function instagram_add_scripts_extra(){
-	echo '<link rel="stylesheet" href="http://static.apps.lv/fancybox/jquery.fancybox-1.3.1.css" type="text/css" media="screen" />
+	echo '<link rel="stylesheet" href="http://static.apps.lv/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
 		<script>
 			jQuery(function(){
 				jQuery("div.wpinstagram").cycle({fx: "fade"});
