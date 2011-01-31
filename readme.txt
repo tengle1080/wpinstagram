@@ -1,6 +1,6 @@
 === Instagram for WordPress ===
 Contributors: Esemono
-Donation link: https://flattr.com/thing/124992/Instagr-am-WordPress-sidebar-widget
+Donate link: https://flattr.com/thing/124992/Instagr-am-WordPress-sidebar-widget
 Tags: widgets, photos, instagram
 Requires at least: 3.0
 Tested up to: 3.1
