@@ -1,6 +1,6 @@
 === Instagram for WordPress ===
-Contributors: esemono
-Tags: widgets, photos
+Contributors: Esemono
+Tags: widgets, photos, instagram
 Requires at least: 3.0
 Tested up to: 3.1
 Stable tag: 0.1.1
@@ -11,6 +11,9 @@ Simple sidebar widget that shows Your latest 20 instagr.am pictures
 
 Simple sidebar widget that shows Your latest 20 instagr.am pictures.
 Requires PHP curl extension.
+
+[![Flattr Button](http://api.flattr.com/button/button-compact-static-100x17.png "Flattr This!")](https://flattr.com/thing/124992/Instagr-am-WordPress-sidebar-widget "Instagr.am WordPress sidebar widget")
+
 
 == Screenshots ==
 
