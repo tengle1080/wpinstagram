@@ -29,3 +29,14 @@ Requires PHP curl extension.
 
 = 0.1.1 =
 * Initial upload to WordPress plugin directory
+
+== Frequently Asked Questions ==
+
+= Do this plugin uses Instagram's unpublished API? =
+
+Currently yes. Hopefully Instagram will release its API to public soon.
+
+== Upgrade Notice ==
+
+= 0.1 =
+Initial upload to WordPress plugin directory
