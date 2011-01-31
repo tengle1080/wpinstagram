@@ -1,25 +1,27 @@
 <?php
 /*
 	Plugin Name: Instagram for Wordpress
-	Plugin URI: https://gist.github.com/799086
-	Description: displays latest 20 instagrams
-	Version: 0.1.1
+	Plugin URI: http://wordpress.org/extend/plugins/instagram-for-wordpress/
+	Description: Simple sidebar widget that shows Your latest 20 instagr.am pictures
+	Version: 0.1.3
 	Author: Eriks Remess
 	Author URI: http://twitter.com/EriksRemess
 */
 add_action( 'init', 'instagram_add_scripts' );
 add_action( 'widgets_init', 'load_wpinstagram' );
 function instagram_add_scripts(){
-	wp_enqueue_script("jquery");
-	wp_register_script("jquery_cycle", "http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js");
-	wp_enqueue_script("jquery_cycle");
-	wp_register_script("jquery_easing", "http://static.apps.lv/fancybox/jquery.easing-1.3.pack.js");
-	wp_enqueue_script("jquery_easing");
-	wp_register_script("jquery_mousewhell", "http://static.apps.lv/fancybox/jquery.mousewheel-3.0.4.pack.js");
-	wp_enqueue_script("jquery_mousewhell");
-	wp_register_script("jquery_fancybox", "http://static.apps.lv/fancybox/jquery.fancybox-1.3.4.pack.js");
-	wp_enqueue_script("jquery_fancybox");
-	add_action("wp_head", "instagram_add_scripts_extra");
+	if( is_active_widget( '', '', 'wpinstagram-widget' ) ) {
+		wp_enqueue_script("jquery");
+		wp_register_script("jquery_cycle", "http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js");
+		wp_enqueue_script("jquery_cycle");
+		wp_register_script("jquery_easing", "http://static.apps.lv/fancybox/jquery.easing-1.3.pack.js");
+		wp_enqueue_script("jquery_easing");
+		wp_register_script("jquery_mousewhell", "http://static.apps.lv/fancybox/jquery.mousewheel-3.0.4.pack.js");
+		wp_enqueue_script("jquery_mousewhell");
+		wp_register_script("jquery_fancybox", "http://static.apps.lv/fancybox/jquery.fancybox-1.3.4.pack.js");
+		wp_enqueue_script("jquery_fancybox");
+		add_action("wp_head", "instagram_add_scripts_extra");
+	}
 }
 
 function instagram_add_scripts_extra(){
